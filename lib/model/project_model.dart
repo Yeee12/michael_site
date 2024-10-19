@@ -28,5 +28,11 @@ List<Project> projectList = [
     "taxi booking app is a user-friendly mobile application built using Flutter. where you can negotiate price and also choose your driver",
     "assets/images/taxi_booking.png",
     "https://github.com/Yeee12/taxi_booking_app"
+  ),
+  Project(
+      "Doctor Booking App",
+      "This is a Flutter-based mobile application for booking appointments with doctors. Users can select a preferred date and time, view their bookings, and confirm appointments.",
+      "assets/images/book_your_doctor.jpg",
+      "https://github.com/Yeee12/book_your_doctor"
   )
 ];
