@@ -9,7 +9,7 @@ class ProjectLinks extends StatelessWidget {
   const ProjectLinks({super.key, required this.index});
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       children: [
         Row(
           children: [
@@ -21,7 +21,14 @@ class ProjectLinks extends StatelessWidget {
         TextButton(
             onPressed: () {
               launchUrl(Uri.parse(projectList[index].link));
-            }, child: const Text('Read More>>',overflow: TextOverflow.ellipsis,style: TextStyle(color: Colors.amber,fontWeight: FontWeight.bold,fontSize: 10),))
+            }, child: const Text('Read More>>',overflow: TextOverflow.ellipsis,style: TextStyle(color: Colors.amber,fontWeight: FontWeight.bold,fontSize: 10),)
+        ),
+        SizedBox(height: 3,),
+        TextButton(
+            onPressed: () {
+              launchUrl(Uri.parse(projectList[index].googleDrive));
+            }, child: const Text('Download App>>',overflow: TextOverflow.ellipsis,style: TextStyle(color: Colors.amber,fontWeight: FontWeight.bold,fontSize: 10),)
+        ),
       ],
     );
   }
